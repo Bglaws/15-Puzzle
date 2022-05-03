@@ -1,5 +1,5 @@
-import { Node } from "./Node.js"
-import { Stack } from "./Stack.js";
+import { Node } from "../Node.js"
+import { Stack } from "../Data-Structures/Stack.js";
 import { writeFile, appendFile } from "fs";
 
 // Solution to the puzzle

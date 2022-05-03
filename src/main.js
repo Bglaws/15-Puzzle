@@ -1,8 +1,8 @@
 import { Node } from "./Node.js";
-import { BFSSolution } from "./BFS.js"
-import { DFSSolution } from "./DFS.js";
-import { DFSHandler } from "./DFSRecursive.js"
-import { aStarSolution } from "./AStar.js";
+import { BFSSolution } from "./Algorithms/BFS.js"
+import { DFSSolution } from "./Algorithms/DFS.js";
+import { DFSHandler } from "./Algorithms/DFSRecursive.js"
+import { aStarSolution } from "./Algorithms/AStar.js";
 const args = process.argv
 
 // This node has a randomized board. It takes too long to solve and will not be used.

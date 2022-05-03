@@ -1,8 +1,7 @@
-import { Queue } from "./Queue.js";
-import { Node } from "./Node.js"
+import { Node } from "../Node.js"
 import { writeFile, appendFile } from "fs";
-import { SOLUTION } from "./Solution.js";
-import { PriorityQueue } from "./PriorityQueue.js"
+import { SOLUTION } from "../Solution.js";
+import { PriorityQueue } from "../Data-Structures/PriorityQueue.js"
 
 let pQueue = new PriorityQueue()
 

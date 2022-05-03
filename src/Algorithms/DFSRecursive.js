@@ -1,7 +1,7 @@
-import { Node } from "./Node.js"
+import { Node } from "../Node.js"
 import { writeFile, appendFile } from "fs";
 import { exit } from "process";
-import { SOLUTION } from "./Solution.js";
+import { SOLUTION } from "../Solution.js";
 
 // for array comparisons
 const equals = (arr1, arr2) => JSON.stringify(arr1) === JSON.stringify(arr2);

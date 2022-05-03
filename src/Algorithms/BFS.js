@@ -1,7 +1,7 @@
-import { Queue } from "./Queue.js";
-import { Node } from "./Node.js"
+import { Queue } from "../Data-Structures/Queue.js";
+import { Node } from "../Node.js"
 import { writeFile, appendFile } from "fs";
-import { SOLUTION } from "./Solution.js";
+import { SOLUTION } from "../Solution.js";
 
 // Queue for keeping track of order of the nodes
 let queue = new Queue()
