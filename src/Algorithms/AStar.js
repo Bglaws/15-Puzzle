@@ -176,9 +176,9 @@ export function aStarSolution (puzzle) {
             const duration = Date.now() - start
             console.log("Solution found! Run time:", Math.floor(duration / 1000),"seconds.", "See aStar.txt for more information.")
 
-            let results = "moves made: " + JSON.stringify(currentNode.moveHistory) + 
-            ".\nSolution found in " + JSON.stringify(currentNode.depth) + 
-            " moves with a run time of " + Math.floor(duration/ 1000) + "seconds."
+            const results = "moves made: " + JSON.stringify(currentNode.moveHistory) + 
+                ".\nSolution found in " + JSON.stringify(currentNode.depth) + 
+                " moves with a run time of " + Math.floor(duration/ 1000) + " seconds."
             
             appendFile('../output/aStar.txt', results, (err) => {
                 if (err) throw err

@@ -104,7 +104,7 @@ function getNeighbor (currentNode, move, x, y) {
 }
 
 function recursiveDFS(currentNode) {
-    console.log("currentNode is", currentNode)
+    console.log("currentNode is", currentNode.board, "\ndepth", currentNode.depth)
 
     if (equals(currentNode.board, SOLUTION)) {
         console.log("Solution found! See DFS.txt for more information.")
@@ -141,7 +141,8 @@ function recursiveDFS(currentNode) {
 }
 
 export function DFSHandler (puzzle) {
-
+    const start = Date.now()
+    
     // print starting position
     let str = "Original board:  " + JSON.stringify(puzzle.board) +"\n\n"
     writeFile('../output/DFS.txt', str, (err) => {
@@ -151,8 +152,11 @@ export function DFSHandler (puzzle) {
     console.log("Calculating DFS solution, this may take a while... ")
     recursiveDFS(puzzle) 
 
+    const duration = Date.now() - start
+
     let results = "moves made: " + JSON.stringify(solvedNode.moveHistory) + 
-    ". Solution found in " + JSON.stringify(solvedNode.depth) + " moves!"
+    ".\nSolution found in " + JSON.stringify(solvedNode.depth) + 
+    " moves with a run time of " + Math.floor(duration/ 1000) + " seconds."
 
     appendFile('../output/DFS.txt', results, (err) => {
         if (err) throw err
