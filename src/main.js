@@ -18,6 +18,14 @@ BFSPuzzle.board = [
     [9,13,14,15]
 ]
 
+let aStarPuzzle = new Node()
+aStarPuzzle.board = [
+    [3,4,7,8],
+    [2,5,12,6],
+    [1,11,'X',15],
+    [10,9,13,14]
+]
+
 let DFSPuzzle = new Node()
 DFSPuzzle.board = [
     [1,2,3,4],
@@ -42,7 +50,7 @@ switch(args[2]) {
         break
 
     case 'a*':
-        aStarSolution(BFSPuzzle)
+        aStarSolution(aStarPuzzle)
         break
 
     default:
