@@ -15,7 +15,7 @@ $ node main.js bfs
 
 BFS and A* are both passed the same puzzle in main to demonstrate how much more efficient A* is than BFS.
 DFS is given its own puzzle to solve. You will likely have to run DFS a few times before it finds the solution.
-This is because DFS selects neighboring nodes at random, so it can easily "miss" the solution and search down the wrong path until you get a stack overflow
+This is because DFS selects neighboring nodes at random, so it can easily "miss" the solution and search down the wrong path until there is a stack overflow
 
 For anyone looking to create their own puzzle, keep in mind:
 
